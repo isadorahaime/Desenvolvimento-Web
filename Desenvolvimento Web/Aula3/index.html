@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <div>
+        <h1>Introdução a JavaScript</h1>
+        <div>
+            <h2>Ver data e hora</h2>
+            <p>Clqie no botão para ver data e hora do sistema</p>
+
+            <button onclick = "document.getElementById('dh').innerHTML = Date()">
+                Veja data e hora
+            </button>
+            <p id = "dh"></p>
+        </div>
+
+        <div>
+            <h2>Transferir informação com JS</h2>
+            <p id = "par1">Este paragrafo sera copiado para o paragrafo abaixo do botão</p>
+
+            <button onclick="myFunction()">
+                Clique aqui para copiar
+            </button>
+            <p id = "par2"></p>
+        </div>
+
+        <div>
+            <h2>Editando o src de uma imagem</h2>
+            <p>Editando a fonte de uma imagem com JS</p>
+
+            <button onclick="deixarTriste()">Deixar Triste</button>
+            <img id = "gato" src="happycat.jpg" alt="Um gato feliz">
+            <button onclick="deixarFeliz()">Deixar Feliz</button>
+        </div>
+
+        <div>
+            <h1>Alterando estilo com JS</h1>  
+            <p id = "pStyle">Este paragrafo será alterado quando o botão abaixo receber um click</p>
+            <button 
+            onclick="editStyle()" 
+            onmouseover="editDisplay()"
+            onmouseout="editDisplay2()"
+            > Edite
+            </button>
+        </div>
+
+        <div>
+            <h2> Janela de alerta </h2>
+            <p> Clque no botão para ver uma mensagem </p>
+            <button onclick = "verJanela()">
+                veja uma mensagem 
+            </button>
+        </div>
+    </div>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("par1").innerHTML
+            document.getElementById("par2").innerHTML = x
+        }
+        
+        function deixarTriste(){
+            document.getElementById("gato").src = "sadcat.jpg"
+        }
+
+        function deixarFeliz(){
+            document.getElementById("gato").src = "happycat.jpg"
+        }
+
+        function editStyle(){
+            document.getElementById("pStyle").style.fontSize = '3em'
+        }
+
+        function editDisplay(){
+            document.getElementById("pStyle").style.display = 'none'
+        }
+        function editDisplay2(){
+            document.getElementById("pStyle").style.display = 'block'
+        }
+        function verJanela(){
+            window.alert('VAI TOMA NO CU PIRANHA!!!!!!!!')
+        }
+    </script>
+</body>
+</html>
