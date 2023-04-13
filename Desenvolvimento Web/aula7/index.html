@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/scrpt.js"></script>
+    <title>Form & JS</title>
+</head>
+<body>
+    <div>
+        <h1>Formularios & JavaScript</h1>
+    </div>
+    <div>
+        <h2>Capturando valores de Radio</h2>
+        <p>Selecione seu genero: </p>
+        <p>
+            Genero: 
+            <input type="radio" name="gender" value="Masculino">Masculino
+            <input type="radio" name="gender" value="Feminino">Feminino
+            <input type="radio" name="gender" value="Outro">Outro
+        </p>
+        <button onclick="getRadio()">Enviar</button>
+        <div id="radioResult"></div>
+    </div>
+
+    <div>
+        <h2>Qual elemento Select foi selecionado</h2>
+        <p>Selecione o seu plano</p>
+        <select name="" id="select1">
+            <option value="free">Free</option>
+            <option value="basico">Basico</option>
+            <option value="premium">Premium</option>
+        </select>
+        <p>Plano selecionado é
+            <span class="output"></span>
+        </p>
+        <button onclick="getOption()">Clique</button>
+    </div>
+
+    <div>
+        <h2>Elementos checkbox</h2>
+        <p>Qual são suas Prioridades</p>
+        <p>Saude 
+            <input type="checkbox" value="Saude">
+        </p>
+        <p>Estudos 
+            <input type="checkbox" value="estudos">
+        </p>
+        <p>Trabalho 
+            <input type="checkbox" value="trabalho">
+        </p>
+        <p>
+            <button onclick="getCheckBox()">Enviar</button>
+        </p>
+        <p>Minhas prioridades são: 
+            <span id="priority"></span>
+        </p>
+        </div>
+</body>
+</html>
