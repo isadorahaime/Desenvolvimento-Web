@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qual tipo de musica você gosta?</h1>
+    <p>Rock
+        <input type="radio" name="" id="">
+    </p>
+    <p>Indie
+        <input type="checkbox" value="indie">
+    </p>
+    <p>MPB
+        <input type="checkbox" value="MPB">
+    </p>
+    <p>
+        <button onclick="getCheckBox()">enviar</button>
+    </p>
+    <p>Meu tipo de musica fav é: 
+        <span id="Musica"></span>
+    </p>
+
+    <h1>Separei algumas playlists para você</h1>
+    <p>escolha uma:</p>
+    <select name="" id="select1">
+        <option value="playlist1"></option>
+        <option value="playist2"></option>
+        <option value="playlist3"></option>
+    </select>
+    <p>A playlist selecionada foi: 
+        <span class="output"></span>
+    </p>
+    <button onclick="getOption()">Clique</button>
+
+    <h1>Gostou da recomendação?</h1>
+    <p>
+        <input type="radio" name="choice" value="sim">Sim
+        <input type="radio" name="choice" value="não">Não
+    </p>
+    <button onclick="getRadio()">enviar</button>
+    <div id="radioResult"></div>
+</body>
+</html>
